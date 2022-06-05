@@ -1,0 +1,15 @@
+﻿<Window x:Class="Keyboard.WindowSettings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Keyboard"
+        mc:Ignorable="d"
+        Title="Settings" Height="400" Width="300">
+    <StackPanel>
+        <TextBox Text="Difficulty" HorizontalContentAlignment="Center" Margin="0 0 0 10"/>
+        <Slider x:Name="SliderDiff" Value="0" Minimum="0" Maximum="2" Height="20" 
+                ValueChanged="Slider_ValueChanged" TickFrequency="1"
+                IsSnapToTickEnabled="True" Margin="20 0 20 10" Background="AntiqueWhite"/>
+    </StackPanel>
+</Window>
